@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: rgb(142, 140, 240);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    text-align:center;
+    color: rgba(255, 255, 255, 0.871);
+    padding: 0 10px;
+}
+
+input#Userbox{
+    box-sizing: border-box; 
+    display: block;
+    background-color: rgba(169, 169, 169, 0.5);
+    color: white;
+    border-width: 0px;
+    border-radius: 50px;
+    border-color: black;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+input#Userbox::placeholder{
+    color: white;
+}
+
+input#Passwordbox {
+    box-sizing: border-box;
+    background-color: rgba(169, 169, 169, 0.5);
+    color: rgb(255, 255, 255);
+    transform: translateY(-20px);
+    border-width: 0px;
+    border-radius: 50px;
+    border-color: black;
+    margin: 8px 0;
+    padding: 15px;
+}
+input#Passwordbox::placeholder {
+    color: white;   
+}
+
+button#button1 {
+    background-color: white;
+    box-sizing: border-box;
+    transform: translateY(-30px);
+    padding:    10px 73px;
+    border-width: 0px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button#button1:hover {
+    background-color: rgb(203, 200, 200);
+}
+
+.account-text {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+p#noaccount {
+    transform: translateY(-45px);
+    font-size: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a#clickhere {
+    transform: translateY(-45px);
+    font-size: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
