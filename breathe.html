@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="breathe.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page1</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="header">
+     
+    <div class="up-bar-header"><i class="fa-solid fa-brain"></i>
+    <span>Virtude</span></div>
+
+    <div class="up-bar">
+         <button class="Up-bar-item" href="page1.html">
+        <i class="fa-regular fa-circle-question"></i>
+    </button>
+    <button class="Up-bar-item">
+        <i class="fa-solid fa-circle-user"></i>
+    </button>
+    </div>
+   
+    </h1> 
+    <main class="container">
+
+
+    <div class="sidebar">
+        <a class="a" href="page1.html">
+              <button class="menu-item">
+            <i class="fa-solid fa-house"></i>
+        <span class="text">Menu</span>
+        </button>
+        </a>
+      
+        <a class="a" href="services.html">
+            <button class="menu-item">
+            <i class="fa-solid fa-address-book"></i>
+        <span class="text">Services</span>
+        </button>
+        </a>
+        
+        
+        <a class="a" href="aboutus.html">
+             <button class="menu-item">
+            <i class="fa-solid fa-business-time"></i>
+        <span class="text">About Us</span>
+        </button>
+        </a>
+       
+            <a class="a" href="contactus.html">
+        <button class="menu-item">
+            <i class="fa-solid fa-envelope"></i>
+        <span class="text">Contact Us</span>
+        </button>
+        </a>
+         
+               <button class="menu-item2">
+           <i class="fa-solid fa-right-to-bracket"></i>
+        <span class="text2">Log Out</span>
+        </button>
+            
+    </div>
+
+    <div class="main-content">
+
+        <div class="content">
+            <h1 class="h1">Breath <span>-with-us</span></h1>
+              <div class="box">
+                  <h2 class="activities">Activities</h2>
+                    <h1 class="mental-health"> Prioritize Your <span>Mental Health</span></h1>
+                    <p class="p-text">This specialized section offers a curated selection of mindfulness activities and practical exercises designed <br> to alleviate anxiety in real time. From guided breathing techniques to grounding <br> challenges and creative outlets, users can explore diverse tools tailored to calm the mind and restore emotional balance. <br>Whether you have five minutes or an hour, <br>this space provides a supportive environment to find the perfect <br> activity to help you navigate stressful moments and regain your inner peace.</p>
+                </div>
+                  <div class="group">
+                <p class= "oi" id="instruction">Get Ready...</p>
+                <div class = "breathe-bar-container">
+                    <div class="breathe-bar"></div>
+                </div>
+                <button onclick="updateText()" class="start">Start</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+                const breatheBar = document.querySelector('.breathe-bar');
+        const text = document.getElementById('instruction');
+        const startButton = document.querySelector('.start');
+
+        function startBreathing() {
+           startButton.style.display = 'none';
+           text.innerText = 'Breathe In...';
+
+           breatheBar.style.animation = 'breathe 10s ease-in-out fowards';
+              setTimeout(() => {
+                text.innerText = 'Hold...';
+              }, 4000);
+
+                setTimeout(()  => {
+                    text.innerText = 'Breathe Out...';
+                }, 7000);
+            
+            setTimeout(() => {
+                text.innerText = 'Done!';
+                breatheBar.style.animation = 'none';
+                startButton.style.display = 'inline-block';
+            }, 10000);
+        }
+
+        startButton.addEventListener('click', startBreathing);
+    </script>
+    </div>
+
+    </main>
+    
+</body>
+</html>

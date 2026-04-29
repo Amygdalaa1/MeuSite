@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    background-color: rgb(142, 140, 240);
+
+    padding: 10px 10px;
+}
+
+.header span{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin-bottom: 10px;
+    
+    color: rgba(255, 255, 255, 0.871);
+    font-size:  30px;
+}
+
+.header i{
+    display: inline;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.871);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(250, 250, 252);
+
+}
+
+.sidebar {
+
+    width: 40px;
+    height: 90vh;
+    transition: 0.5s;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px 5px;
+
+
+    background-color: rgb(255, 255, 255);
+
+    border: 2px ridge;
+    border-color: rgb(93, 93, 93);
+    border-top: 0px;
+    border-left: 10px;
+    border-width: 1px;  
+
+}
+
+.sidebar:hover {
+    width: 130px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    white-space: nowrap;
+
+    padding: 1px 10px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.menu-item i{
+    font-size: 20px;
+    top: 100px;
+        left: 7px; 
+}
+
+.text {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.text:hover {
+    transition: 0.5s;
+    background-color: lightgrey;
+    border-radius: 5px;
+
+}
+
+.menu-item2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    white-space: nowrap;
+
+    margin-top: auto;
+    background: none;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.menu-item2 i{
+    font-size: 20px;
+    top: 100px;
+        left: 7px; 
+}
+
+.text2 {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.text2:hover {
+    transition: 0.5s;
+    background-color: lightgrey;
+    border-radius: 5px;
+
+}
+
+.sidebar:hover .text {
+    opacity: 1;
+}
+
+.sidebar:hover .text2 {
+    opacity: 1;
+}
+
+.menu-item3 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 5px;
+    
+
+
+    background: none;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.menu-item3 i{
+    font-size: 25px;
+    top: 100px;
+        left: 3px; 
+}
+
+.up-bar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Up-bar-item {
+    margin:0;
+    width: auto;
+    margin-top: 5px;
+    background: none;
+    cursor: pointer;
+    border: none;
+
+}
+
+.Up-bar-item i:hover {
+    transition: 0.5s;
+    color: rgb(199, 199, 199);
+    border-radius: 5px;
+
+}
+
+.Up-bar-item i{
+    font-size: 30px;
+}
+
+.a{
+    text-decoration: none;
+}
+
+.photos-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.photos {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+
+
+    padding: 40px;
+    border: 2px ridge;
+    border-radius: 20px;
+}
+
+.photos:hover {
+    transition: 0.5s;
+    background-color: rgb(142, 140, 240);
+    color:rgb(123, 121, 241);
+    border-radius: 30px;
+}
+
+.henrique img {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wolski img {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+.h3 {
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:rgb(52, 3, 60);
+}
+
+.p {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+.social-media {
+    padding: 11px;
+    margin:0;
+    width: auto;
+    margin-top: 5px;
+    background: none;
+    cursor: pointer;
+    border: none;
+
+}
+
+.social-media i:hover {
+    transition: 0.5s;
+    color: rgb(199, 199, 199);
+    border-radius: 5px;
+
+}
+
+.social-media i{
+    font-size: 30px;
+}
