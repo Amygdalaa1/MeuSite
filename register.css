@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: rgb(142, 140, 240);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.text-sign-up {
+    margin-bottom: -30px;
+    color: rgba(255, 255, 255, 0.871);
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    text-align:center;
+    color: rgba(255, 255, 255, 0.871);
+    padding: 0 10px;
+}
+
+input#Namebox{
+    box-sizing: border-box; 
+    display: block;
+    background-color: rgba(169, 169, 169, 0.5);
+    color: white;
+    border-width: 0px;
+    border-radius: 50px;
+    border-color: black;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+.input-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -10px;
+}
+
+.input-box i{
+    position: absolute;
+    padding-top: 0px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.871);
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    font-size: 14px;
+    
+}
+
+.icon-button i{
+    position: absolute;
+    top: 16px;
+     right: 15px;
+    color: rgba(255, 255, 255, 0.871);
+}
+
+input#Userbox{
+    box-sizing: border-box; 
+    display: block;
+    background-color: rgba(169, 169, 169, 0.5);
+    color: white;
+    border-width: 0px;
+    border-radius: 50px;
+    border-color: black;
+    margin: 0 auto;
+    padding: 15px;
+    padding-left: 15px;
+
+
+}
+
+input#Passwordbox{
+    box-sizing: border-box; 
+    display: block;
+    background-color: rgba(169, 169, 169, 0.5);
+    color: white;
+    border-width: 0px;
+    border-radius: 50px;
+    border-color: black;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+input#ConfirmPasswordbox{
+    box-sizing: border-box; 
+    display: block;
+    background-color: rgba(169, 169, 169, 0.5);
+    color: white;
+    border-width: 0px;
+    border-radius: 50px;
+    border-color: black;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+button#button2 {
+    background-color: white;
+    box-sizing: border-box;
+    transform: translateY(10px);
+    padding:    10px 69px;
+    border-width: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button#button2:hover {
+    background-color: rgb(203, 200, 200);
+}
+
+p#text1 {
+    margin-top: -8px;
+    transform: translateX(75px);
+    color: rgba(255, 255, 255, 0.871);
+    font-size: 11px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
